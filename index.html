@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/musicplayer.css">
+    <script src="js/musiclist.js" defer></script>
+    <script src="js/musicplayer.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Music player</title>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-icons">expand_more</i>
+            <h4>Now playing</h4>
+            <i class="material-icons">more_horiz</i>
+        </div>
+
+        <div class="img-box">
+            <img src="img/img-1.jpg" alt="">
+        </div>
+
+        <div class="music-details">
+            <div class="song-name">song1</div>
+            <div class="artist">hassan</div>
+        </div>
+
+        <div class="progress-area">
+            <div class="slide-bar"></div>
+            <div class="timer">
+                <div class="current">0:00</div>
+                <div class="duration">00:00</div>
+            </div>
+        </div>
+        <!-- audio element -->
+        <div class="controls">
+            <i class="material-icons" id="repeat-plist" title="playlist looped">repeat</i>
+            <i class="material-icons" id="prev">skip_previous</i>
+
+            <div class="play-pause ">
+                <i class="material-icons">play_arrow</i>
+            </div>
+
+
+            <i class="material-icons" id="next">skip_next</i>
+            <i class="material-icons" id="moresongs">queue_music</i>
+        </div> <!--end details-->
+        <!-- <audio src="audio/music-0.mp3"  ></audio> -->
+        <audio src="" id="audiomusic" title="playlist looped"></audio>
+
+        <!-- music list -->
+        <div class="music-list close-music">
+            <div class="header">
+                <div class="row">
+                    <i class="material-icons">queue_music</i>
+                    <h3>music list</h3>
+                </div>
+                <i class="material-icons" id="closelist">close</i>
+            </div>
+            <ul>
+
+
+            </ul>
+            <!-- music-list ends -->
+        </div>
+
+
+        <!-- wrapper ends  -->
+    </div>
+
+
+    <div class="theme ">
+<h1>Change theme  </h1>
+   <div class="toggle "></div>
+    </div>
+</body>
+
+</html>
