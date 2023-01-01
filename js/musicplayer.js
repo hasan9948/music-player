@@ -209,8 +209,6 @@ for (let i = 0; i < allmusic.length; i++) {
     // console.log(liadudiotagduration)
 
     liadudiotag.addEventListener("loadeddata", function () {
-
-
         minduration = Math.floor(liadudiotag.duration / 60)
         secduration = Math.floor(liadudiotag.duration % 60)
         if (isNaN(minduration)) {
