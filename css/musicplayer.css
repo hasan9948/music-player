@@ -49,6 +49,7 @@ body .wrapper {
     background: var(--white);
     /* position: relative; */
     overflow: hidden;
+    color:#aaa;
 }
 
 .wrapper .top-bar,
